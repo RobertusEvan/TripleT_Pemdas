@@ -26,7 +26,7 @@ Game Tic-Tac-Toe berbasis Java Swing dengan fitur login, statistik, dan Top 5 Sc
 4. Jalankan `Main.java`
 
 ## Video Demo
-[Link YouTube akan diisi]
+[(https://youtu.be/YG6eD1wOmDI)]
 
 ## Screenshots
 ![Login](screenshots/Login.png)
