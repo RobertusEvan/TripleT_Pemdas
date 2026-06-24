@@ -31,6 +31,6 @@ Game Tic-Tac-Toe berbasis Java Swing dengan fitur login, statistik, dan Top 5 Sc
 ## Screenshots
 ![Login](screenshots/Login.png)
 ![Main Menut](screenshots/Menu.png)
-![Game](screenshots/Game.png)
+![Game](screenshots/GameOG.png)
 ![Statistics](screenshots/Stat.png)
 ![Top Scorers](screenshots/Leaderboard.png)
