@@ -8,11 +8,11 @@ public class StatisticsFrame extends javax.swing.JFrame {
 
     private Player currentPlayer;
 
-    // 1. CONSTRUCTOR UTAMA: Dipanggil dari MainMenuFrame sambil bawa data player
+    
     public StatisticsFrame(Player player) {
         this.currentPlayer = player;
         initComponents();
-        this.setLocationRelativeTo(null); // Biar window otomatis di tengah layar
+        this.setLocationRelativeTo(null);
         
         if (currentPlayer != null) {
             this.setTitle("My Statistics - " + currentPlayer.getUsername());

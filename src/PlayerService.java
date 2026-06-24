@@ -61,7 +61,6 @@ public class PlayerService {
 
     public List<Player> getTopFiveScorers() {
         List<Player> topPlayers = new ArrayList<>();
-        // Menggunakan query PostgreSQL sesuai panduan PDF
         String sql = "SELECT id, username, wins, losses, draws, score FROM players ORDER BY score DESC, wins DESC LIMIT 5";
         
         try {

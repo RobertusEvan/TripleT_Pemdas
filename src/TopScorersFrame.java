@@ -9,23 +9,21 @@ import javax.swing.table.DefaultTableModel;
 
 public class TopScorersFrame extends javax.swing.JFrame {
 
-    // CONSTRUCTOR: Otomatis dipanggil saat frame ini dibuka
+    
     public TopScorersFrame() {
         initComponents();
         this.setTitle("Top 5 Leaderboard");
-        this.setLocationRelativeTo(null); // Biar window muncul di tengah layar
-        loadTableData(); // Isi data tabel begitu halaman terbuka
+        this.setLocationRelativeTo(null); 
+        loadTableData(); 
     }
 
-    // Method untuk mengambil data top 5 pemain dan memasukkannya ke JTable
+    
     private void loadTableData() {
         PlayerService service = new PlayerService();
         List<Player> topPlayers = service.getTopFiveScorers();
-        
-        // Judul kolom untuk tabel leaderboard
+       
         String[] columnNames = {"Rank", "Username", "Wins", "Losses", "Draws", "Total Score"};
         
-        // Buat model tabel baru dengan row awal = 0
         DefaultTableModel model = new DefaultTableModel(columnNames, 0);
         
         int rank = 1;
@@ -38,10 +36,9 @@ public class TopScorersFrame extends javax.swing.JFrame {
                 p.getDraws(),
                 p.getScore()
             };
-            model.addRow(row); // Masukkan baris data ke model
+            model.addRow(row);
         }
         
-        // Set model yang sudah terisi data ke jTable1 hasil desainmu
         jTable1.setModel(model);
     }
 
@@ -133,7 +130,7 @@ public class TopScorersFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(TopScorersFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(() -> new TopScorersFrame().setVisible(true));
     }
 
